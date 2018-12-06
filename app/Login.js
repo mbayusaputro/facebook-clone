@@ -10,7 +10,7 @@ export default class Login extends React.Component {
         <Thumbnail large square source={{uri: uri}} style={{marginBottom:20}}/>
         <Text style={{color:'#fff'}}>Masukkan Kata Sandi</Text>
         <Item style={{width:280, marginTop:20}}>
-          <Input style={{color:'#fff'}} placeholder='Kata Sandi'/>
+          <Input style={{color:'#fff'}} secureTextEntry placeholder='Kata Sandi'/>
         </Item>
         <Button style={{marginTop:20, marginBottom:120, marginLeft:40, marginRight:40}} block onPress={() => this.props.navigation.navigate('Home')}>
           <Text>Masuk</Text>

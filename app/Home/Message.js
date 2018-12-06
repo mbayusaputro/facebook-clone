@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Content, List} from 'native-base';
+import {Content, List, Text} from 'native-base';
 
 import Vlist from './Sub/Isi';
 
@@ -20,6 +20,9 @@ export default class Message extends Component {
   render(){
     return(
         <Content>
+        <List style={{height:30}}>
+          <Text style={{marginLeft:15, marginTop:4, fontWeight:'bold'}}>Pesan</Text>
+        </List>
           <List>
             {this.anime.map((anime,key)=> <Vlist key={key} anime={anime}/>)}
           </List>
